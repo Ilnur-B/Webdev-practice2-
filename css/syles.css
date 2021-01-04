@@ -1,0 +1,85 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.navigation {
+  height: 50px;
+  background-color: #212121;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 13px 70px;
+  margin: 0;
+  list-style-type: none;
+}
+.menu a {
+  font-size: 15px;
+  font-weight: 300;
+  color: #ffffff;
+  text-decoration: none;
+
+  border-right: 3px dotted black;
+  padding-right: 40px;
+}
+
+.subheader {
+  min-height: 84px;
+  height: 84px;
+
+  background-color: rgba(000, 000, 000, 0.6);
+}
+
+.logo_uber {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+.logo_text {
+  opacity: 0.5;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 100;
+  color: #ffffff;
+}
+
+.tel_text {
+  margin-top: 23px;
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.subheader_tel {
+  margin-top: 8px;
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.call_btn {
+  margin-top: 16px;
+}
+.call_btn a {
+  display: block;
+  width: 178px;
+  height: 52px;
+  background-image: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
+  border: 3px solid rgba(0, 0, 0, 0.06);
+  text-align: center;
+  padding-top: 12px;
+  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 6px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+background: url(../img/promo_bg.png) center center/cover no-repeat;
