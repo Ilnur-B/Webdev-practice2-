@@ -5,6 +5,10 @@
 .navigation {
   height: 50px;
   background-color: #212121;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 .menu {
@@ -32,7 +36,7 @@ header {
   width: 100%;
   min-height: 84px;
   height: 84px;
-
+  margin-top: 50px;
   background-color: rgba(000, 000, 000, 0.6);
 }
 
@@ -132,4 +136,60 @@ header {
   font-weight: 400;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.advantage {
+  min-height: 900px;
+  margin-top: 71px;
+}
+
+.advantage_header {
+  font-size: 11px;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 112px;
+  height: 24px;
+  background-color: #000000;
+  margin: 0 auto;
+  padding-top: 6px;
+}
+.ad_icon {
+  display: block;
+  margin: 20px auto;
+}
+
+.ad_icon_box {
+  border-radius: 100%;
+  width: 113px;
+  height: 113px;
+  background-color: #1eacc7;
+  margin-left: 30px;
+}
+
+.ad_text_box {
+  margin-left: 26px;
+}
+
+.ad_text_header {
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #1eacc7;
+}
+
+.adv_subheader {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 38px;
+}
+
+.adv_item_box {
+  margin-top: 40px;
 }
