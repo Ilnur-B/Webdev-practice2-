@@ -1,176 +1,241 @@
-
 *
     font-family: "Roboto", sans-serif
 
-.navigation
+header
+    position: relative
+    height: 50px
+
+nav
+    position: fixed
+    width: 100%
     height: 50px
     background-color: #212121
-    position: fixed
-    top: 0
-    width: 100%
     z-index: 2
 
 .menu
     display: flex
-    justify-content: space-around
+    justify-content: space-between
     padding: 13px 70px
     margin: 0
     list-style-type: none
 
-a
+.menu_link
+    color: #ffffff
     font-size: 15px
     font-weight: 300
-    color: #ffffff
-    text-decoration: none
-    border-right: 3px dotted black
-    padding-right: 40px
 
-header
-    position: relative
+.menu_item
+    border-right: 2px dotted black
+    padding-right: 28px
 
 .subheader
     position: absolute
+    top: 50px
     width: 100%
-    min-height: 84px
     height: 84px
-    margin-top: 50px
     background-color: rgba(0, 0, 0, 0.6)
 
-.logo_uber
+.subheader_logo
     display: block
+    max-width: 100%
     margin-top: 16px
-    margin-bottom: 6px
 
-.logo_text
+.subheader_official
+    margin-top: 6px
     opacity: 0.5
-    font-family: Roboto
+    color: #ffffff
     font-size: 13px
-    font-weight: 100
-    color: #ffffff
+    font-weight: 400
 
-.tel_text
-    margin-top: 23px
-    font-family: Roboto
+.subheader_call
+    color: #ffffff
     font-size: 12px
-    line-height: 14px
     font-weight: 300
-    color: #ffffff
+    margin-top: 19px
+    text-align: right
 
-.subheader_tel
-    margin-top: 8px
-    font-size: 22px
-    text-decoration: none
-    font-weight: 400
-    text-transform: uppercase
-    color: #ffffff
-
-.call_btn
-    margin-top: 16px
-
-a
+.subheader_phone
     display: block
-    width: 178px
-    height: 52px
-    background-image: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%)
-    border: 3px solid rgba(0, 0, 0, 0.06)
-    text-align: center
-    padding-top: 12px
-    box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.2)
-    text-decoration: none
-    font-size: 14px
-    border-radius: 6px
+    margin-top: 8px
+    color: #ffffff
+    font-size: 22px
     font-weight: 400
     text-transform: uppercase
+    text-align: right
+    line-height: 12px
+
+.subheader_btn
+    margin-top: 19px
+    width: 172px
+    height: 46px
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
+    border: none
+    border-radius: 4px
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
     color: #ffffff
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
 
 .promo
-    background: url(../img/promo_bg.png) center (center / cover) no-repeat
-    padding: 151px 0 132px 0
+    min-height: 800px
+    background: url(/img/promo_bg.png) center (center / cover) no-repeat
+    padding: 150px 0 135px 0
 
 .promo_header
-    font-size: 60px
-    text-align: center
-    font-weight: 900
-    text-transform: uppercase
-    color: #ffffff
-    margin: 0
-
-.promo_subheader
-    margin-top: 15px
-    text-align: center
-    font-size: 36px
     color: #ffffff
     font-weight: 700
+    text-transform: uppercase
+    font-size: 60px
+    line-height: 60px
     margin: 0
-
-.promo_text
     text-align: center
-    font-size: 18px
-    line-height: 24px
-    font-weight: 400
+
+.promo_subheader
     color: #ffffff
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 36px
+    line-height: 36px
+    margin: 0
+    margin-top: 22px
+    text-align: center
+
+.promo_descr
+    color: #ffffff
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
+    text-align: center
     margin-top: 23px
 
 .promo_btn
     display: block
-    margin: 0 auto
-    margin-top: 115px
-    width: 265px
-    height: 69px
-    background-image: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%)
-    border: 3px solid rgba(0, 0, 0, 0.06)
-    border-radius: 6px
+    margin: 118px auto 0 auto
+    width: 259px
+    height: 63px
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
+    border: none
+    border-radius: 4px
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+    color: #ffffff
     font-size: 18px
-    line-height: 68px
     font-weight: 400
     text-transform: uppercase
-    color: #ffffff
 
-.advantage
-    min-height: 900px
-    margin-top: 71px
+.reasons
+    padding: 71px 0 65px 0
 
-.advantage_header
-    font-size: 11px
-    text-align: center
-    font-weight: 100
-    text-transform: uppercase
-    color: #ffffff
-    width: 112px
-    height: 24px
-    background-color: #000000
+.label
     margin: 0 auto
-    padding-top: 6px
+    height: 24px
+    width: 112px
+    padding: 5px 12px
+    background-color: #000000
+    color: #ffffff
+    font-size: 11px
+    font-weight: 300
+    text-transform: uppercase
+    text-align: center
 
-.ad_icon
-    display: block
-    margin: 20px auto
-
-.ad_icon_box
-    border-radius: 100%
-    width: 113px
-    height: 113px
-    background-color: #1eacc7
-    margin-left: 30px
-
-.ad_text_box
-    margin-left: 26px
-
-.ad_text_header
+.subtitle
     font-size: 17px
     line-height: 21px
     font-weight: 400
-    color: #1eacc7
+    color: #222222
+    text-align: center
+    margin-top: 19px
 
-.adv_subheader
+.title
+    margin-bottom: 0
+    margin-top: 38px
+    color: #222222
     font-size: 38px
-    line-height: 48px
     font-weight: 700
     text-transform: uppercase
-    color: #222222
-    margin: 0 auto
     text-align: center
-    margin-top: 38px
 
-.adv_item_box
-    margin-top: 40px
+.reasons .reasons_block
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 35px
+
+.reasons_round
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 26px
+    width: 113px
+    height: 113px
+    background-color: #1eacc7
+    border-radius: 100%
+
+.reasons_descr
+    width: 343px
+
+    .reasons_subtitle
+        line-height: 21px
+        color: #1eacc7
+        font-size: 17px
+        font-weight: 400
+
+    .reasons_text
+        color: #202020
+        font-size: 15px
+        font-weight: 300
+        line-height: 21px
+
+.mobile
+    min-height: 864px
+    background: url('/img/mobile_bg.png') center center/cover no-repeat
+    padding: 48px 0 79px 0
+
+    .row
+        padding-top: 32px
+
+    &_item
+        width: 320px
+        height: 280px
+        margin: 0 auto
+        padding-top: 92px
+        margin-top: 19px
+        position: relative
+
+        &_1
+            background: url('/img/chance1.png') center center/cover no-repeat
+        &_2
+            background: url('/img/chance2.png') center center/cover no-repeat
+        &_3
+            background: url('/img/chance3.png') center center/cover no-repeat
+        &_4
+            background: url('/img/chance4.png') center center/cover no-repeat
+        &_5
+            background: url('/img/chance5.png') center center/cover no-repeat
+        &_6
+            background: url('/img/chance6.png') center center/cover no-repeat
+        &_text
+            font-size: 24px
+            font-weight: 400
+            text-transform: uppercase
+            color: #ffffff
+            text-align: center
+
+        &_plus
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            bottom: 35px
+            left: 50%
+            transform: translateX(-50%)
+            width: 26px
+            height: 26px
+            background-color: #000000
+            border-radius: 50%
+
+            margin: 0 auto
+
+            img
