@@ -302,7 +302,7 @@ nav
             padding-top: 217px
 
 .condition
-    padding: 68px 0 44px 0
+    padding: 68px 0 34px 0
     .title
         margin-bottom: 33px
 
@@ -323,7 +323,7 @@ nav
             position: relative
 
             &::before
-                margin: 1px
+                padding: 1px
                 content: ''
                 display: block
                 position: absolute
@@ -346,3 +346,119 @@ nav
             li
                 &::before
                     background: url('/icons/check_red.svg') center center/cover no-repeat
+
+.world
+
+    background-color: #080816
+    &_bg
+        min-height: 717px
+        background: url('/img/world_bg.png') center center/cover no-repeat
+        padding: 49px 0
+        position: relative
+        .label
+            background-color: #ffffff
+            color: #070716
+        .title
+            color: #ffffff
+        .subtitle
+            color: #ffffff
+        .bottom_text
+            font-size: 15px
+            line-height: 68px
+            font-weight: 400
+            text-transform: uppercase
+            color: #1fbad6
+            text-align: center
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
+
+.footer
+
+    padding: 14px 23px 31px 23px
+    position: relative
+    &_media
+        display: flex
+        justify-content: space-between
+        transform: translateY(50%)
+
+        &_social_item
+            display: flex
+            justify-content: center
+            list-style: none
+
+            li
+                font-size: 32px
+                padding-left: 9px
+
+                a
+                    text-decoration: none
+                    color: black
+
+                &:first-child
+                    padding-left: 0
+    &_download
+        align-self: center
+
+    &_download_item
+        display: flex
+        justify-content: center
+
+        li
+            list-style: none
+            padding-right: 7px
+
+            &:last-child
+                padding-right: 0
+
+    &_navigation
+        position: absolute
+        left: 50%
+        top: 14px
+        transform: translateX(-50%)
+        &_line
+            display: block
+            width: 299px
+            height: 4px
+            background-color: #1fbad6
+            margin: 0 auto
+        &_item_top
+            display: flex
+            justify-content: space-around
+            list-style: none
+            padding-top: 32px
+            padding-left: 0
+            margin: 0
+            a
+                text-decoration: none
+                font-size: 15px
+                font-weight: 300
+                text-transform: uppercase
+                color: #070716
+        &_item_midle
+            display: flex
+            justify-content: space-between
+            padding-left: 0
+            padding-top: 15px
+            list-style: none
+            margin: 0
+            a
+                text-decoration: none
+                font-size: 11px
+                color: #999999
+                font-weight: 300
+                text-transform: uppercase
+            li
+                padding-right: 21px
+                &:last-child
+                    padding-right: 0
+        &_language
+            display: block
+            margin: 0 auto
+            text-align: center
+            font-size: 11px
+            font-weight: 400
+            text-transform: uppercase
+            color: #1fbad6
+            margin-top: 19px
