@@ -1,5 +1,6 @@
 @media (max-width: 1200px)
-
+    .hamburger
+        display: none
     .menu
         &_item
             padding-right: 21px
@@ -77,6 +78,18 @@
         &_requaire
             padding-top: 30px
 @media (max-width: 767px)
+    .hamburger
+        display: block
+        &_active
+            span
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(45deg)
+                    margin-bottom: -2px
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(-45deg)
+                    margin-bottom: 2px
 
     .menu
         position: fixed
@@ -84,9 +97,9 @@
         justify-content: center
         align-items: start
         top: 0
-        left: 00%
+        left: -100%
         width: 50%
-        height: 100%
+        height: 100vh
         padding: 20px 15px
         background-color: rgba(0,0,0,0.8)
         transition: 0.8s all
@@ -98,3 +111,23 @@
             border: none
             padding-right: 0
             margin: 10px 0
+
+    .subheader
+        &_logo
+
+        &_official
+            display: none
+        &_call
+            display: none
+@media (max-width: 575px)
+    .hamburger
+        display: block
+    header
+        height: 30px
+    nav
+        height: 30px
+    .subheader
+        top: 30px
+        &_logo
+            width: 130px
+            height: 15px
